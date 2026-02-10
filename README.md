@@ -56,8 +56,7 @@ All activities were performed in a **controlled Azure lab environment**.
 
 ### 1. Resource Group Creation
 A dedicated resource group was created to logically organize Sentinel resources.
-
-📸 Screenshot:  
+  
 📸 Screenshot:
 
 ![Resource group created](screenshots/01_resource_group_created.png)
