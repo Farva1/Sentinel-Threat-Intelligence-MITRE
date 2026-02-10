@@ -1,0 +1,10 @@
+let TI = ThreatIntelligenceIndicator
+| where TimeGenerated > ago(30d)
+| where isnotempty(NetworkIP)
+| summarize arg_max(TimeGenerated, *) by NetworkIP;
+SigninLogs
+| where TimeGenerated > ago(30d)
+| extend IP = tostring(IPAddress)
+| join kind=inner (TI) on $left.IP == $right.NetworkIP
+| project TimeGenerated, UserPrincipalName, IPAddress, AppDisplayName, Location, Description, ThreatType, ConfidenceScore
+| sort by TimeGenerated desc

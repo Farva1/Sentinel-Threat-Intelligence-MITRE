@@ -1,0 +1,4 @@
+SigninLogs
+| where TimeGenerated > ago(24h)
+| summarize SignInCount = count() by UserPrincipalName
+| order by SignInCount desc
