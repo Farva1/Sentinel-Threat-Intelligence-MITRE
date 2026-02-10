@@ -61,21 +61,26 @@ A dedicated resource group was created to logically organize Sentinel resources.
 
 ![Resource group created](screenshots/01_resource_group_created.png)
 
+
 ---
 
 ### 2. Log Analytics Workspace Setup
-A Log Analytics workspace was created to store and query security logs.
+A Log Analytics workspace was created to store and query security logs. 
 
-📸 Screenshot:  
-`02_log_analytics_workspace_created.png`
+📸 Screenshot:
+
+![Log Analytics workspace created](screenshots/02_log_analytics_workspace_created.png)
+
 
 ---
 
 ### 3. Microsoft Sentinel Enabled
 Microsoft Sentinel was enabled on the Log Analytics workspace.
 
-📸 Screenshot:  
-`03_sentinel_enabled.png`
+📸 Screenshot:
+
+![Microsoft Sentinel enabled](screenshots/03_sentinel_enabled.png)
+
 
 ---
 
