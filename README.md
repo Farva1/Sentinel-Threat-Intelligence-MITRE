@@ -58,7 +58,9 @@ All activities were performed in a **controlled Azure lab environment**.
 A dedicated resource group was created to logically organize Sentinel resources.
 
 📸 Screenshot:  
-`01_resource_group_created.png`
+📸 Screenshot:
+
+![Resource group created](screenshots/01_resource_group_created.png)
 
 ---
 
