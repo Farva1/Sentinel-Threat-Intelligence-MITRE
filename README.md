@@ -87,48 +87,60 @@ Microsoft Sentinel was enabled on the Log Analytics workspace.
 ### 4. Microsoft Entra ID Data Connector
 The Microsoft Entra ID data connector was enabled to ingest sign-in logs.
 
-📸 Screenshot:  
-`04_entra_data_connector_enabled.png`
+📸 Screenshot:
+
+![Entra ID data connector enabled](screenshots/04_entra_data_connector_enabled.png)
+
 
 ---
 
 ### 5. Sign-in Log Generation & Validation
 Multiple sign-in events were generated and verified using KQL to confirm log ingestion.
 
-📸 Screenshot:  
-`05_signinlogs_data_visible.png`
+📸 Screenshot:
+
+![Signin logs visible](screenshots/05_signinlogs_data_visible.png)
+
 
 ---
 
 ### 6. Threat Intelligence Indicator Creation
 A manual IP-based Threat Intelligence indicator was created for lab testing purposes.
 
-📸 Screenshot (IP blurred):  
-`06_ti_indicator_created_blurred.png`
+📸 Screenshot:
+
+![TI indicator created](screenshots/06_ti_indicator_created_blurred.png)
+
 
 ---
 
 ### 7. Log Enrichment Using KQL
 Sign-in logs were enriched by joining authentication events with Threat Intelligence indicators using KQL.
 
-📸 Screenshot:  
-`07_enrichment_join_results.png`
+📸 Screenshot:
+
+![TI enrichment join results](screenshots/07_enrichment_join_results.png)
+
 
 ---
 
 ### 8. Analytics Rule with MITRE ATT&CK Mapping
 A Threat Intelligence analytics rule was enabled using a Microsoft-provided rule template with MITRE ATT&CK tactics and techniques.
 
-📸 Screenshot:  
-`08_rule_template_mitre_mapping.png`
+📸 Screenshot:
+
+![MITRE mapping rule template](screenshots/08_rule_template_mitre_mapping.png)
+
 
 ---
 
 ### 9. Analytics Rule Enabled
 The analytics rule was successfully created, enabled, and verified.
 
-📸 Screenshot:  
-`09_analytics_rule_created_mitre.png`
+📸 Screenshot:
+
+![Analytics rule created with MITRE](screenshots/09_analytics_rule_created_mitre.png)
+
 
 ---
 
@@ -138,8 +150,10 @@ The Incidents dashboard was monitored after rule deployment.
 During the lab timeframe, **no incidents were generated**, as no sign-in events matched the threat intelligence indicator.  
 This reflects real-world SOC environments where detections depend on live telemetry and exact indicator matches.
 
-📸 Screenshot:  
-`10_incidents_list_no_matches.png`
+📸 Screenshot:
+
+![Incidents list no incidents](screenshots/10_incidents_list_no_incidents.png)
+
 
 ---
 
