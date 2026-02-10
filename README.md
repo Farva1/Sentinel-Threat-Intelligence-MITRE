@@ -159,11 +159,14 @@ This reflects real-world SOC environments where detections depend on live teleme
 
 ## Queries Included
 
-- `01_signinlogs_check.kql`  
-  Used to validate Microsoft Entra ID sign-in log ingestion.
+The following Kusto Query Language (KQL) queries were used in this project to validate log ingestion and enrich security events with threat intelligence:
 
-- `02_ti_enrichment_join.kql`  
-  Used to enrich sign-in logs with Threat Intelligence indicators.
+- **Queries/01_signinlogs_check.kql**  
+  Validates Microsoft Entra ID sign-in log ingestion into Microsoft Sentinel by summarizing recent sign-in activity.
+
+- **Queries/02_ti_enrichment_join.kql**  
+  Enriches Entra ID sign-in logs by joining sign-in IP addresses with Threat Intelligence indicators to identify potentially malicious activity.
+
 
 ---
 
